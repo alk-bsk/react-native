@@ -16,7 +16,7 @@ export default function App() {
 
   const [fontsLoaded] = useFonts({
     'open-sans': require('./assets/fonts/OpenSans-Regular.ttf'),
-    'OpenSans-bold': require('./assets/fonts/OpenSans-Bold.ttf')
+    'open-sans-bold': require('./assets/fonts/OpenSans-Bold.ttf')
   });
 
   if (!fontsLoaded) {
@@ -51,18 +51,20 @@ export default function App() {
   }
 
   return (
-    <LinearGradient colors={[Colors.primary800, Colors.accent500]} style={styles.rootScreen}>
-      <ImageBackground source={require('./assets/images/background.jpg')}
-        resizeMode='cover'
-        style={styles.rootScreen}
-        imageStyle={styles.backgroundImage}
-      >
-        <SafeAreaView style={styles.rootScreen}>
-          {screen}
-        </SafeAreaView>
-      </ImageBackground>
-      <StatusBar style="auto" />
-    </LinearGradient>
+    <>
+      <StatusBar style="light" />
+      <LinearGradient colors={[Colors.primary800, Colors.accent500]} style={styles.rootScreen}>
+        <ImageBackground source={require('./assets/images/background.jpg')}
+          resizeMode='cover'
+          style={styles.rootScreen}
+          imageStyle={styles.backgroundImage}
+        >
+          <SafeAreaView style={styles.rootScreen}>
+            {screen}
+          </SafeAreaView>
+        </ImageBackground>
+      </LinearGradient>
+    </>
   );
 }
 
