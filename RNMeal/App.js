@@ -18,10 +18,10 @@ function DrawerNavigator() {
   return <Drawer.Navigator
     useLegacyImplementation={true}
     screenOptions={{
-      headerStyle: { backgroundColor: '#351401' },
+      headerStyle: { backgroundColor: '#613014' },
       headerTintColor: 'white',
-      sceneContainerStyle: { backgroundColor: '#3f2f25' },
-      drawerContentStyle: { backgroundColor: '#351401' },
+      // sceneContainerStyle: { backgroundColor: '#3f2f25' },
+      drawerContentStyle: { backgroundColor: '#613014' },
       drawerInactiveTintColor: 'white',
       drawerActiveTintColor: '#351401',
       drawerActiveBackgroundColor: '#e4baa1'
@@ -49,9 +49,9 @@ export default function App() {
       <Provider store={store}>
         <NavigationContainer>
           <Stack.Navigator screenOptions={{
-            headerStyle: { backgroundColor: '#351401' },
+            headerStyle: { backgroundColor: '#613014' },
             headerTintColor: 'white',
-            contentStyle: { backgroundColor: '#3f2f25' }
+            // contentStyle: { backgroundColor: '#3f2f25' }
           }}>
             <Stack.Screen name='Drawer'
               component={DrawerNavigator}

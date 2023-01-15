@@ -18,10 +18,15 @@ const styles = StyleSheet.create({
         paddingVertical: 4,
         marginVertical: 4,
         marginHorizontal: 12,
-        backgroundColor: '#e2b497'
+        borderWidth: 2,
+        borderColor: '#8b5939',
+        shadowColor: 'black',
+        shadowOffset: { height: 2, width: 0 },
+        shadowRadius: 6,
+        shadowOpacity: 0.25
     },
     itemText: {
-        color: '#351401',
+        color: '#613014',
         textAlign: 'center'
     }
 });

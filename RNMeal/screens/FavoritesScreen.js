@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { useSelector } from 'react-redux';
 import MealsList from '../components/MealsList/MealsList'
 import { MEALS } from '../data/dummy-data';
-import { FavoritesContext } from '../store/context/favorites-context'
+// import { FavoritesContext } from '../store/context/favorites-context'
 
 export default function FavouritesScreen() {
     // const favoriteMealsCtx = useContext(FavoritesContext);
@@ -32,6 +32,6 @@ const styles = StyleSheet.create({
     text: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: 'white'
+        color: '#8b5939'
     }
 });

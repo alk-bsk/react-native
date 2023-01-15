@@ -63,6 +63,7 @@ export default function MealDetailScreen({ route, navigation }) {
 
 const styles = StyleSheet.create({
     rootContainer: {
+        marginTop: -1,
         marginBottom: 32
     },
     image: {
@@ -74,10 +75,10 @@ const styles = StyleSheet.create({
         fontSize: 24,
         margin: 8,
         textAlign: 'center',
-        color: 'white'
+        color: '#613014'
     },
     detailText: {
-        color: 'white'
+        color: '#613014'
     },
     listContainer: {
         width: '80%'
